@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<link href="css/main.css" rel="stylesheet">
+
+<link rel="stylesheet" href="bower_components/bpmn-js/dist/assets/diagram-js.css">
+<script src="log/logExp.js"></script>
+
+<script type="text/javascript">
+    var partId;
+    function assignPartId(){
+        partId = localStorage["partId"];
+        logExp("Start legend page", partId);
+    }
+ </script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body>
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Notasi BPMN</h2>
+    </div>
+    </section><!--end of header section-->
+   
+    <section id="main">
+        <div style="margin:30px">
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0" class="center">
+            <thead>
+                <tr>
+                <th class="img">Notasi</th>
+                <th class="img">Nama</th>
+                <th>Keterangan</th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0" class="center">
+            <tbody>
+                <tr>
+                <td class="img text"><img src="images/start.png" height="35px" ></td>
+                <td class="img text">Start event</td>
+                <td class="text">Simbol yang mengindikasikan bahwa sebuah proses akan dimulai.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/end.png" height="40px" ></td>
+                <td class="img text">End event</td>
+                <td class="text">Simbol yang mengindikasikan bahwa sebuah proses telah berakhir.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/task.png" height="60px" ></td>
+                <td class="img text">Task</td>
+                <td class="text">Aktivitas atau unit kegiatan yang dilakukan dalam sebuah proses.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/xor.png" height="40px" ></td>
+                <td class="img text">Exclusive choice</td>
+                <td class="text">Simbol yang mengindikasikan suatu pilihan dimana alur proses akan berjalan sesuai salah satu kondisi yang dipilih. Proses akan dilanjutkan setelah aktivitas yang terkait dengan kondisi yang dipilih selesai dilakukan.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/and.png" height="40px" ></td>
+                <td class="img text">Parallel</td>
+                <td class="text">Merepresentasikan kondisi dimana terdapat dua atau lebih aktivitas yang dapat dilakukan secara paralel/bersamaan. Proses akan dilanjutkan setelah semua aktivitas terkait selesai dilakukan.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/or.png" height="50px" ></td>
+                <td class="img text">Inclusive choice</td>
+                <td class="text">Simbol ini mengindikasikan kondisi dimana alur proses akan berjalan berdasarkan satu atau lebih kondisi yang dipilih. Proses akan dilanjutkan setelah aktivitas terkait dengan kondisi yang dipilih selesai dilakukan.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/arrow.png" height="30px" ></td>
+                <td class="img text">Sequence flow</td>
+                <td class="text">Digunakan untuk menunjukkan urutan kegiatan yang akan dilakukan dalam sebuah proses.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/pool.png" height="80px" ></td>
+                <td class="img text">Pool and Lanes</td>
+                <td class="text">Pool dan lanes digunakan untuk menggambarkan sebuah organisasi. Setiap lane merepresentasikan sebuah role yang terlibat dalam suatu proses.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/dataobject.png" height="70px" ></td>
+                <td class="img text">Data object</td>
+                <td class="text">Merepresentasikan informasi atau objek yang dibutuhkan atau dihasilkan dalam alur suatu proses seperti dokumen, email, surat, dan sebagainya.</td>
+                </tr>
+                <tr>
+                <td class="img text"><img src="images/datastore.png" height="70px" ></td>
+                <td class="img text">Data store</td>
+                <td class="text">Merepresentasikan suatu objek yang digunakan untuk menyimpan atau mengakses data yang terkait dengan sutu proses bisnis, misalnya filing cabinet, database, atau aplikasi.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="centerImg">
+            <button animFinish-button-click id="finishLegend" ><span class="glyphicon glyphicon-ok"></span> Lanjutkan</button>
+        </div>
+    </section><!--end of main section-->
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+    
+    <!-- application -->
+    <script src="js/nar_anim_bundle.js"></script>
+
+    
+  </body>
+</html>

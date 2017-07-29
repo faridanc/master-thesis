@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" type="image/x-icon">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width">
+  <base target="_blank">
+  
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://docs.google.com/static/forms/client/css/1272744746-formview_st_ltr.css' type='text/css' rel='stylesheet'>
+<link href='https://docs.google.com/static/forms/client/css/3145455273-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+<link href='css/formstyle.css' type='text/css' rel='stylesheet'>
+<link href="css/main.css" type='text/css' rel="stylesheet">
+
+<script src="log/logExp.js"></script>
+<script src="js/recap.js"></script>
+<script type="text/javascript">
+    //Get or Assign UniqueId for each session-------
+    //-----------------------------------------------------------------
+    var partId;
+    function assignPartId(){
+        partId = localStorage["partId"];
+        logExp("Start personal survey", partId);
+    }
+    
+    function getProcessName() {
+        return 'bg';
+    }
+</script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body>
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Survey Personal</h2>
+    </div>
+
+    <hr class="style-two" >    
+    <div class="headerText">
+        <label class="rightImg"  id="timer" style="font-size:large">00:00</label>
+        Pada halaman ini Anda diharapkan untuk menjawab beberapa pertanyaan mengenai latar belakang terkait proses model maupun pengalaman Anda terkait proses bisnis yang diterapkan di Pusintek.<br>
+        Mohon untuk menjawab pertanyaan di bawah sesuai dengan kondisi Anda pada saat ini.<br>
+        Setelah selesai, Anda akan melanjutkan eksperimen ini dengan mengobservasi 2 (dua) proses model dan menjawab pertanyaan terkait proses tersebut.
+    </div>
+    </section><!--end of header section-->
+   
+    <div id="formContainer" class="ss-form-container">
+        <div style="text-align:center;padding:10px">
+            <h3><b>Survey Personal</b></h3>
+            <hr class="style-two">
+        </div>
+    
+    <div id="questionContainer" class="ss-form">
+    <iframe name="iframe_personal" id="iframe_personal" style="display:none;" onload="if(typeof sent_personal!='undefined'){redirect_quest();}"></iframe>
+    <form action="https://script.google.com/macros/s/AKfycbzw5C4P2_2Nvm9cnejGasHCtE-q-2FWj7S3vs3I_2nlxq5kSSo/exec" method="POST" id="ss-form" target="iframe_personal" onsubmit="sent_personal=true">
+        <div class="ss-required-asterisk" aria-hidden="true"><i>* (harus diisi)</i></div>
+        <!--NO.1-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">1. Seberapa sering Anda menjumpai hal yang berkaitan dengan proses model dalam pekerjaan Anda?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <ul class="ss-choices" role="radiogroup">
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q1" value="A" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Tidak pernah</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q1" value="B" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Kurang dari sekali dalam sebulan</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q1" value="C" role="radio" required="true">
+            <span class="ss-choice-label">Lebih dari sekali dalam sebulan</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q1" value="D" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Setiap hari</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q1" value="E" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Saya tidak tahu</span>
+            </label></li>
+            </ul>
+            </div></div>
+        </div><!-- end of no.1-->
+
+        <!-- No.2 -->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">2. Bagaimana Anda menilai pemahaman atau pengetahuan Anda mengenai proses model?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <table id="knowledge-table">
+                <tr>
+                    <td><label class="ss-likert-label"></label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">1</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">2</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">3</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">4</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">5</label></td>
+                    <td><label class="ss-likert-label"></label></td>
+                </tr>
+                <tr >
+                    <td style="padding:5px"><span class="ss-likert-label">Tidak mengerti sama sekali</span></td>
+                    <td class="ss-likert-td-button"><label><input name="q2" type="radio" role="radio" value="1" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q2" type="radio" role="radio" value="2" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q2" type="radio" role="radio" value="3" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q2" type="radio" role="radio" value="4" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q2" type="radio" role="radio" value="5" required="true"/></label></td>
+                    <td style="padding:5px"><span class="ss-likert-label">Sangat mengerti</span></td>
+                </tr>
+            </table>
+            </div></div>
+        </div><!--end of no.2-->
+
+        <!-- No.3 -->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">3. Bagaimana Anda menilai pemahaman atau pengetahuan Anda mengenai BPMN?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <table id="bpmn-table">
+                <tr>
+                    <td><label class="ss-likert-label"></label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">1</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">2</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">3</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">4</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">5</label></td>
+                    <td><label class="ss-likert-label"></label></td>
+                </tr>
+                <tr >
+                    <td style="padding:5px"><span class="ss-likert-label">Tidak mengerti sama sekali</span></td>
+                    <td class="ss-likert-td-button"><label><input name="q3" type="radio" value="1" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q3" type="radio" value="2" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q3" type="radio" value="3" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q3" type="radio" value="4" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q3" type="radio" value="5" required="true"/></label></td>
+                    <td style="padding:5px"><span class="ss-likert-label">Sangat mengerti</span></td>
+                </tr>
+            </table>
+            </div></div>
+        </div><!--end of no.3-->
+
+        <!-- no.4-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">4. Apakah Anda sedang atau pernah mengikuti pelatihan yang berkaitan dengan proses model?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+            
+            <ul class="ss-choices" role="radiogroup">
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q4" value="Ya" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Ya</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q4" value="Tidak" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Tidak</span>
+            </label></li> 
+            </ul>    
+            </div></div>
+        </div><!-- end of no.4-->
+
+        <!--no.5-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">5. Seberapa familiarkah Anda dengan proses layanan co-location di Pusintek?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <table id="colocation-table">
+                <tr>
+                    <td><label class="ss-likert-label"></label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">1</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">2</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">3</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">4</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">5</label></td>
+                    <td><label class="ss-likert-label"></label></td>
+                </tr>
+                <tr >
+                    <td style="padding:5px"><span class="ss-likert-label">Tidak familiar sama sekali</span></td>
+                    <td class="ss-likert-td-button"><label><input name="q5" type="radio" value="1" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q5" type="radio" value="2" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q5" type="radio" value="3" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q5" type="radio" value="4" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q5" type="radio" value="5" required="true"/></label></td>
+                    <td style="padding:5px"><span class="ss-likert-label">Sangat familiar</span></td>
+                </tr>
+            </table>
+            </div></div>
+        </div><!--end of no.5-->
+
+        <!--no.6-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio">
+            <div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">6. Seberapa familiarkah anda dengan proses manajemen perubahan (change management) di Pusintek?
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <table id="colocation-table">
+                <tr>
+                    <td><label class="ss-likert-label"></label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">1</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">2</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">3</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">4</label></td>
+                    <td class="ss-likert-td-header"><label class="ss-likert-label">5</label></td>
+                    <td><label class="ss-likert-label"></label></td>
+                </tr>
+                <tr >
+                    <td style="padding:5px"><span class="ss-likert-label">Tidak familiar sama sekali</span></td>
+                    <td class="ss-likert-td-button"><label><input name="q6" type="radio" value="1" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q6" type="radio" value="2" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q6" type="radio" value="3" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q6" type="radio" value="4" required="true"/></label></td>
+                    <td class="ss-likert-td-button"><label><input name="q6" type="radio" value="5" required="true"/></label></td>
+                    <td style="padding:5px"><span class="ss-likert-label">Sangat familiar</span></td>
+                </tr>
+            </table>
+            </div></div>
+        </div><!--end of no.6-->
+
+        <!--no.7-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio">
+            <div class="ss-form-entry">
+            <div class="ss-q-title">7. Usia Anda saat ini:
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+            <input class="ss-choice-label" name="q7" type="number" min="18" max="70" style="width:50px;margin-left:15px" required="true"/>
+            <div class="required-message">Please enter the correct number</div>
+            </div></div>
+        </div><!--end of no.7-->
+
+        <!--no.8-->
+        <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-radio">
+            <div class="ss-form-entry">
+            <label class="ss-q-item-label">
+            <div class="ss-q-title">8. Gender:
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+
+            <ul class="ss-choices" role="radiogroup">
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q8" value="Pria" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Pria</span>
+            </label></li> 
+            <li class="ss-choice-item"><label>
+            <input type="radio" name="q8" value="Wanita" role="radio" class="ss-q-radio" required="true">
+            <span class="ss-choice-label">Wanita</span>
+            </label></li> 
+            </ul>    
+            </div></div>
+        </div><!--end of no.8-->
+
+        <!--UID-->
+        <input type="text" name="uid" id="uid" hidden="true" />
+        <!--UID-->
+                
+        <div class="centerImg" style="margin-bottom:15px">
+            <button type="submit" id="btn-submit" onclick="assignUniqueId();"><span class="glyphicon glyphicon-ok"></span>  Selesai</button>
+        </div>
+    </form>
+    </div> <!-- closing div id=questionContainer-->
+    </div> <!--closing div id="formContainer"-->
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+  <!-- end of footer section -->
+
+    
+   <!-- <script type='text/javascript' src='static/656350063-formviewer_prd__en_gb.js'></script>
+    <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,null,[]\n]\n");
+    </script>-->
+    <!-- application -->
+    <script src="js/nar_anim_bundle.js"></script>
+
+    </body>
+</html>

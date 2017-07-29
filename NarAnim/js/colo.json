@@ -1,0 +1,168 @@
+
+  narration_colocation = [
+    {
+      "id": "1",
+      "sid": "sid-751C23D4-30B3-4BC9-AC60-181EFFF55FF5",
+      "nar_text": "Proses dimulai saat pengguna membutuhkan layanan colocation dari Pusintek. Dengan layanan ini, pengguna dari unit Eselon I Kementerian Keuangan dapat menempatkan perangkat keras TIK (meliputi server atau perangkat jaringan, dengan/tanpa rak) pada Data Center Kementerian Keuangan dengan fasilitas pendukung meliputi outlet (listrik dan jaringan), sumber listrik, jaringan intranet/internet, serta fasilitas pendukung data center lain yang disediakan oleh Pusintek."
+    },
+    {
+      "id": "2",
+      "sid": "sid-465FDE78-F4CD-4891-B5F7-D7E3402F727C",
+      "nar_text": "Pengguna mengajukan permintaan layanan colocation kepada Pusintek dengan menyerahkan dokumen persyaratan."
+    },
+    {
+      "id": "3",
+      "sid": "sid-4A9C2C37-A7FD-4638-A9F5-22C31264B39A",
+      "nar_text": "Service Desk melakukan pengecekan validitas permintaan dengan memeriksa dokumen yang diserahkan oleh pengguna dan memutuskan apakah permintaan tersebut valid. Aktivitas ini dilakukan baik untuk dokumen persyaratan yang baru diterima maupun yang disubmit ulang oleh user setelah perbaikan."
+    },
+    {
+      "id": "4",
+      "sid": "sid-DCDB70CF-6F08-4965-94FC-FEC7DDA956DB",
+      "nar_text": ""
+    },
+    {
+      "id": "5",
+      "sid": "sid-0BFE209B-2F92-40B5-BF63-D81D9BD03378",
+      "nar_text": "Apabila dokumen persyaratan tidak sesuai, Service Desk menginformasikan kepada pengguna untuk mengupdate dan melengkapi dokumen dalam kurun waktu 3 hari setelah pemberitahuan. Setelah mendapat informasi dari Service Desk, user dapat menyerahkan dokumen yang telah dilengkapi sesuai batas waktu atau tidak."
+    },
+    {
+      "id": "6",
+      "sid": "sid-7EBE3762-D4C9-49B0-88DA-39E9FFB9A10E",
+      "nar_text": ""
+    },
+    {
+      "id": "7",
+      "sid": "sid-2201BFDD-5655-42F7-8319-40BE55138701",
+      "nar_text": "Service Desk menginformasikan kepada pengguna melalui email atau telepon bahwa permintaan ditolak karena dokumen persyaratan tidak sesuai."
+    },
+    {
+      "id": "8",
+      "sid": "sid-192A7A53-3445-4B1B-8216-97B252926D92",
+      "nar_text": "Permintaan layanan ditolak."
+    },
+    {
+      "id": "9",
+      "sid": "sid-7F2E7688-09B7-47AA-955E-A55B3ABC3827",
+      "nar_text": "Pengguna mengupdate dan melengkapi dokumen persyaratan sesuai yang disarankan oleh Service Desk."
+    },
+    {
+      "id": "10",
+      "sid": "sid-72C60971-BBB2-46AF-86A4-A284D507BF0A",
+      "nar_text": "Pengguna menyerahkan kembali dokumen persyaratan kepada Service Desk. Kemudian proses pemeriksaan dokumen persyaratan oleh Service Desk akan diulang kembali."
+    },
+    {
+      "id": "11",
+      "sid": "sid-E07DA8AC-6C7D-4A57-8D5F-436FB5511B74",
+      "nar_text": "Jika dokumen persyaratan sudah lengkap dan sesuai, Service Desk merekam permintaan layanan pada aplikasi SipelanTIK."
+    },
+    {
+      "id": "12",
+      "sid": "sid-18675F2F-0C76-4684-9A26-91F623C44047",
+      "nar_text": "Service Desk menginformasikan nomor tiket kepada pengguna. Pengguna dapat mengacu pada nomor tiket ini saat meminta informasi atau status pengerjaan tiket kepada Service Desk."
+    },
+    {
+      "id": "13",
+      "sid": "sid-6FEDF39A-A338-4C60-B7F4-ED7C2849C77E",
+      "nar_text": "Kepala Subbidang OPD mereview permintaan layanan colocation dengan melakukan pengecekan informasi yang terdapat pada tiket."
+    },
+    {
+      "id": "14",
+      "sid": "sid-AD68857F-92BA-4FBA-876F-3A41BEC9E34F",
+      "nar_text": "Kepala Subbidang OPD menyusun jadwal pelaksanaan colocation. Jadwal ini ditentukan dengan mempertimbangkan workload dan resource yang tersedia."
+    },
+    {
+      "id": "15",
+      "sid": "sid-0D238F41-AD4E-4078-A91D-3E32E3D12D99",
+      "nar_text": "Kepala Subbidang OPD menugaskan staff OPD yang bertugas sebagai penanggung jawab dan mendampingi proses colocation pada data center."
+    },
+    {
+      "id": "16",
+      "sid": "sid-D8764326-D032-4EF1-B59C-DFB7978B299C",
+      "nar_text": "Staff OPD melakukan tahap perencanaan colocation dengan berkoordinasi dengan pengguna untuk menggali informasi mengenai kebutuhan resource dan fasilitas pendukung, alokasi tempat, alokasi jaringan, rencana pengujian, rencana rollback, dan jadwal pelaksanaan. <br>Ruang lingkup pekerjaan dan tanggung jawab antara pihak Pusintek dan pengguna juga ditentukan pada tahap ini. <br>Apabila resource yang dibutuhkan telah ditentukan, maka akan dapat diketahui apakah resource tersebut telah tersedia di data center."
+    },
+    {
+      "id": "17",
+      "sid": "sid-D206670C-5CA3-4A20-B39E-9C79ECA525B4",
+      "nar_text": ""
+    },
+    {
+      "id": "18",
+      "sid": "sid-140835EC-82BC-4D0D-9450-4234EBA7682A",
+      "nar_text": "Staff OPD mempersiapkan infrastruktur jaringan dan fasilitas pendukung data center lainnya sesuai dengan detail spesifikasi yang telah ditetapkan pada tahap perencanaan."
+    },
+    {
+      "id": "19",
+      "sid": "sid-BFBCE317-00F3-4586-A4D7-CA47E7DB9832",
+      "nar_text":	"Apabila berdasarkan tahap perencanaan terdapat resource yang belum tersedia, maka staff OPD akan berkoordinasi dengan pihak ketiga untuk pemenuhan kebutuhan tersebut."
+    },
+    {
+      "id": "20",
+      "sid": "sid-B701627C-6EC6-4FB6-B274-157C66737911",
+      "nar_text": "Terdapat dua hal yang dapat dilakukan oleh pihak ketiga. PIhak ketiga dapat melakukan salah satu maupun kedua aktivitas berikut."
+    },
+    {
+      "id": "21",
+      "sid": "sid-D4E41D71-49BB-4437-B4C3-785874C75DE8",
+      "nar_text": "Pihak ketiga menyediakan dan mempersiapkan infrastruktur sesuai kebutuhan permintaan, seperti menyediakan jalur network atau resource lain yang belum tersedia di data center."
+    },
+    {
+      "id": "22",
+      "sid": "sid-A24FBC5D-09EF-4BCB-B699-B27BA459E680",
+      "nar_text": "Pihak ketiga melakukan instalasi dan/atau konfigurasi resource yang telah tersedia pada data center."
+    },
+    {
+      "id": "23",
+      "sid": "sid-7E9FCEF3-DE70-4B7A-A462-67C1402F9067",
+      "nar_text": "Staff OPD mengawal jalannya proses colocation, dimulai dari pemindahan dan pemasangan perangkat dengan atau tanpa rak pada lokasi yang telah ditentukan pada tahap perencanaan."
+    },
+    {
+      "id": "24",
+      "sid": "sid-1AB4BB64-4FF3-4F06-9CD9-C147967D114F",
+      "nar_text": "Setelah perangkat dan/atau rak terpasang, proses dilanjutkan dengan konfigurasi jaringan berdasarkan alokasi jaringan yang telah diberikan, serta konfigurasi aplikasi pada perangkat."
+    },
+    {
+      "id": "25",
+      "sid": "sid-64667764-DDF8-423E-8CA0-6D0EAB285042",
+      "nar_text": "Proses dilanjutkan dengan pengujian jaringan dan performa perangkat oleh staff OPD untuk memastikan konektivitas dan aplikasi pada perangkat berjalan dengan normal."
+    },
+    {
+      "id": "26",
+      "sid": "sid-4B442022-0032-42B0-8FC9-D905F5876FB3",
+      "nar_text": ""
+    },
+    {
+      "id": "27",
+      "sid": "sid-14FAB828-1A71-47EC-9CA7-6C2FD68313CF",
+      "nar_text": "Jika pengujian gagal, maka dilakukan implementasi rollback oleh staff OPD untuk mengembalikan kondisi semula. Kemudian, proses dilanjutkan dengan mengulang kembali tahap perencanaan dan aktivitas terkait lain yang mengikutinya."
+    },
+    {
+      "id": "28",
+      "sid": "sid-027910C4-875F-4E60-B56E-21F9947BACEC",
+      "nar_text": "Jika pengujian berhasil, staff OPD membuat dokumen Berita Acara Serah Terima untuk pengguna. Pada dokumen ini disebutkan bahwa Pusintek bertanggung jawab atas ketersediaan jaringan dan fasilitas pendukung data center lainnya.<br>Di sisi lain, pihak pengguna bertanggung jawab atas ketersediaan sistem operasi, ketersediaan aplikasi/data, dan backup aplikasi/data.<br>Jika di kemudian hari pihak pengguna menginginkan perubahan resource aau spesifikasi perangkatnya, maka pengguna dapat mengajukan permintaan perubahan (request for change) melalui Service Desk."
+    },
+    {
+      "id": "29",
+      "sid": "sid-673FCFEC-5AEA-404E-85E5-7A91E3C8CFCF",
+      "nar_text": "Pengguna menandatangani dokumen BAST dan menyerahkan kembali kepada staff OPD."
+    },
+    {
+      "id": "30",
+      "sid": "sid-2C1B5B04-07D7-4740-9B23-55390DEFBF8B",
+      "nar_text": "Staff OPD melakukan resolve tiket permintaan pada aplikasi SipelanTIK yang menandakan pemenuhan layanan."
+    },
+    {
+      "id": "31",
+      "sid": "sid-99F3C398-4827-4053-A6F8-09CD978B4404",
+      "nar_text": "Service Desk melakukan konfirmasi kepada pengguna bahwa layanan telah dipenuhi sesuai dengan permintaan."
+    },
+    {
+      "id": "32",
+      "sid": "sid-FC6B53CA-8886-4EDE-B33D-0CDF266ECA44",
+      "nar_text": "Service Desk menutup tiket pada SipelanTIK yang menandakan bahwa permintaan layanan telah selesai."
+    },
+    {
+      "id": "33",
+      "sid": "sid-D2F82A0F-A296-41C0-8907-D290AE7E1CB9",
+      "nar_text": "Permintaan layanan selesai."
+    }
+  ];

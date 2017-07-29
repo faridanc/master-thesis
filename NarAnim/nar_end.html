@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<link href="css/main.css" rel="stylesheet">
+
+<link rel="stylesheet" href="bower_components/bpmn-js/dist/assets/diagram-js.css">
+<script src="log/logExp.js"></script>
+
+<script type="text/javascript">
+    var partId;
+    function assignPartId(){
+        partId = localStorage["partId"];
+        logExp("End Experiment", partId);
+    }
+</script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body>
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Process Modelling Enrichment Using Narration</h2>
+    </div>
+    </section><!--end of header section-->
+   
+    <section id="main">
+        <div style="margin:30px">
+            <h3>Terima Kasih</h3><br>
+
+            Anda telah menyelesaikan seluruh rangkaian eksperimen ini.<br>
+            Partisipasi Anda dalam mengikuti eksperimen ini sangat membantu kami pada studi ini.<br>
+            Jika Anda mempunyai pertanyaan atau membutuhkan informasi tambahan, silahkan <a href="mailto:faridanurcahyani@student.vu.nl">hubungi kami.</a><br>
+            Terima kasih dan selamat beraktivitas kembali.
+        </div>
+    </section><!--end of main section-->
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+
+    <!-- application -->
+    <script src="js/nar_anim_bundle.js"></script>
+
+  </body>
+</html>

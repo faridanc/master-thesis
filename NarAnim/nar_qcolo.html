@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" type="image/x-icon">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width">
+  <base target="_blank">
+  
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://docs.google.com/static/forms/client/css/1272744746-formview_st_ltr.css' type='text/css' rel='stylesheet'>
+<link href='https://docs.google.com/static/forms/client/css/3145455273-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+<link href='css/formstyle.css' type='text/css' rel='stylesheet'>
+<link href="css/main.css" type='text/css' rel="stylesheet">
+
+<script src="log/logExp.js"></script>
+<script src="js/recap.js"></script>
+<script type="text/javascript">
+    var partId;
+    function assignPartId(){
+        partId = localStorage["partId"];
+        logExp("Start questions - Model: Colocation", partId);
+    }
+
+    function getProcessName() {
+        return 'colocation';
+    }
+</script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body>
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Layanan Co-location</h2>
+    </div>
+
+    <hr class="style-two">    
+    <div class="headerText">
+        <label class="rightImg"  id="timer" style="font-size:large">00:00</label>
+        <p><font color="a80823">Perhatian:</font><br>
+        Pada bagian ini, Anda akan diminta untuk menjawab pertanyaan mengenai proses layanan colocation<br>
+        <b><u>Tidak</u></b> semua aktivitas dan alur dalam proses model yang telah Anda lihat pada halaman sebelumnya sesuai dengan proses yang terjadi di Pusintek. <br>
+        <b>Mohon untuk <u>tidak</u> menjawab pertanyaan berikut berdasarkan pengalaman yang telah Anda miliki dalam organisasi ini, melainkan mengacu kepada proses model yang ditampilkan.</b><br>
+        Sebagai referensi, Anda dapat mengakses proses model terkait dengan meng-klik tombol yang terdapat di bawah ini.<br>
+    </div>
+
+    </section><!--end of header section-->
+
+    <div id="formContainer" class="ss-form-container">
+        <div style="text-align:center;padding:10px">
+        <button id="btn-model" style="float: right" onclick="window.open('nar_statcolo.html?s=q1','menubar=no'); return false;">Lihat proses model</button>
+            <h3><b>Layanan Co-location</b></h3>
+            <hr class="style-two">
+        </div>
+
+        
+    
+        <div id="questionContainer" class="ss-form">
+            <iframe name="iframe_colocation" id="iframe_colocation" style="display:none;" onload="if(typeof sent_colocation!='undefined'){redirect_quest();}"></iframe>
+            <form action="https://script.google.com/macros/s/AKfycbzOl1v4h2FnNhEi_JAz3nfRAaOonkapjxQvSxrAlmjEWK_rDF8/exec" method="POST" id="ss-form" target="iframe_colocation" onsubmit="sent_colocation=true;">
+                <div class="ss-required-asterisk" aria-hidden="true"><i>* (harus diisi)</i></div>
+                <!--NO.1-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">1. Manakah di antara pernyataan di bawah ini yang benar mengenai aktivitas yang dilakukan setelah Kepala Subbidang OPD mereview permintaan colocation?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk menginformasikan nomor tiket kepada user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Kepala Subbidang OPD membuat jadwal implementasi atau menugaskan staff OPD untuk menjadi PIC</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="C" role="radio" required="true">
+                    <span class="ss-choice-label">Staff OPD membuat perencaan colocation setelah Kepala Subbidang OPD membuat jadwal implementasi dan menunjuk PIC</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="D" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Staff OPD melakukan survey bersama dengan pihak ketiga</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.1-->
+
+                <!--NO.2-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">2.	Manakah di antara pernyataan di bawah ini yang benar mengenai kondisi setelah tes konektivitas dan performance?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika tes berhasil, staff OPD akan me-resolve tiket kemudian membuat dokumen BAST</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika tes berhasil, staff OPD akan melakukan rollback kemudian mengulangi langkah perencanaan dan aktivitas selanjutnya</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika tes gagal, staff OPD akan me-resolve tiket kemudian membuat dokumen BAST</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label" >Jika tes gagal, staff OPD akan melakukan rollback kemudian mengulangi langkah perencanaan dan aktivitas selanjutnya</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.2-->
+
+                <!--NO.3-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">3. Pada kondisi apa staff OPD perlu berkoordinasi dengan pihak ketiga?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah pemasangan server/rak, apabila semua resource yang dibutuhkan telah tersedia di Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah melakukan perencanaan colocation, apabila semua resource yang dibutuhkan telah tersedia di Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Sebelum pemasangan server/rak, apabila tidak semua resource yang dibutuhkan tersedia di Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Sebelum perencanaan colocation, apabila tidak semua resource yang dibutuhkan telah tersedia di Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.3-->
+
+                <!--NO.4-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">4. Apa yang terjadi apabila Service Desk mendapati bahwa user menyerahkan dokumen persyaratan permohonan colocation yang belum lengkap?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk melakukan pengecekan kembali dan mengkomunikasin hal tersebut kepada atasan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk menginformasikan kepada user untuk melengkapi dokumen persyaratan selambat-lambatnya dalam 3 hari kerja</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk menginformasikan kepada user bahwa permintaan ditolak</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Service Desk merekam tiket permintaan dan menginformasikan kepad user untuk melengkapi dokumen persyaratan selambat-lambatnya dalam 3 hari kerja</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.4-->
+
+                <!--NO.5-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">5. Dalam kondisi apa sebuah tiket permintaan dapat diresolve?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah Service Desk membuat dokumen BAST untuk user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah Service Desk mengkonfirmasi pemenuhan permintaan kepada user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah staff OPD membuat dokumen BAST dan mengimplementasikan rollback</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Setelah staff OPD membuat dokumen BAST dan ditandatangani oleh user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.5-->
+
+                <!--NO.6-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">6. Manakan pernyataan berikut ini yang tidak benar mengenai aktivitas yang dilakukan oleh Service Desk? 
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk melakukan perekaman tiket permintaan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk membuat dokumen BAST dan menyerahkan kepada user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Service Desk menginformasikan penolakan permintaan kepada user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Service Desk mengkonfirmasikan pemenuhan permintaan kepada user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.6-->
+
+                <!--NO.7-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">7. Apa yang terjadi apabila setelah pemenuhan permintaan colocation, user menginginkan perubahan resource atau spesifikasi server?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Staff OPD melakukan langkah perencanaan untuk pemenuhan permintaan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">User mengajukan permintaan perubahan (RFC) kepada Service Desk</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">User tidak diperbolehkan melakukan perubahan resource atau spesifikasi server</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">User dapat segera melakukan perubhan resource dan spesifikasi server sesuai dengan waktu yang dikehendaki oleh user</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.7-->
+
+                <!--NO.8-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">8. Apa yang harus dilakukan oleh staff OPD setelah mempersiapkan kebutuhan infrastruktur jaringan dan fasilitas pendukung lainnya?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Melakukan konfigurasi kemudian melakukan tes konektivitas atau performance server</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Melakukan instalasi dan konfigurasi server secara paralel</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Melakukan konfigurasi kemudian instalasi server</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Melakukan instalasi kemudian konfigurasi server</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.8-->
+
+                <!--NO.9-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">9. Manakah dari pernyataan berikut ini yang benar mengenai pihak ketiga?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Pihak ketiga meyediakan resource yang belum tersedia di Data Center atau melakukan instalasi dan konfigurasi, atau keduanya</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Pihak ketiga menyediakan resource yang belum tersedia di Data Center tanpa melakukan konfigurasi</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Pihak ketiga terlibat dalam tahap perencanaan colocation</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Pihak ketiga terlibat dalam tahap persiapan infrastruktur saat semua kebutuhan resource telah tersedia di Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.9-->
+
+                <!--NO.10-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">10. Manakah dari pernyataan berikut yang benar mengenai aktivitas yang dilakukan pada tahap perencanaan colocation?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Persiapan infrastruktur dan fasilitas pendukung lainnya dilakukan pada tahap ini</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Tahap ini dilakukan setelah server terpasang pada Data Center</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Semua aktivitas yang dilakukan setelah tahap ini dilakukan oleh staff OPD</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Perencanaan tes dan rollback ditentukan pada tahap ini</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.10-->
+
+                <!--UID-->
+                <input type="text" name="uid" id="uid" hidden="true"/>
+                <!--UID-->
+                
+                <div class="centerImg" style="margin-bottom:15px">
+                    <button type="submit" id="btn-submit" onclick="assignUniqueId()"><span class="glyphicon glyphicon-ok"></span>  Selesai</button>
+                </div>
+            </form>
+        </div> <!--closing div id="questionContainer"-->
+    </div> <!--closing div id="formContainer"-->
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+  <!-- end of footer section -->
+    
+   <!-- <script type='text/javascript' src='static/656350063-formviewer_prd__en_gb.js'></script>
+    <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,null,[]\n]\n");
+    </script>-->
+
+    <!-- application -->
+    <script src="js/nar_anim_bundle.js"></script>
+
+    </body>
+</html>

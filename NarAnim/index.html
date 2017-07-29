@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<link href="css/main.css" rel="stylesheet">
+
+<link rel="stylesheet" href="bower_components/bpmn-js/dist/assets/diagram-js.css">
+<script src="log/logExp.js"></script>
+
+<script type="text/javascript">
+    var partId;
+    var expType;
+
+    function processId()
+    {
+        var timeStamp = Math.floor(Date.now() / 1000);
+        var randomLetter = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
+        partId = timeStamp+randomLetter;
+        return partId;
+    }
+
+    function getQueryVariable(variable){    
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    function assignPartId(){
+        localStorage["partId"] = processId();
+        var processType = getQueryVariable("type");
+        if( processType.indexOf('1') != -1)
+            $("#startExpStatic").hide();
+        else
+            $("#startExpNar").hide();
+    }
+        
+    function assignGroup(group) {
+        expType = group;
+        localStorage["expType"] = expType;
+        //add groupName into partId
+        partId = expType.substring(0,1) + partId;
+        localStorage["partId"] = partId;
+        document.getElementById('uid').value = partId;
+        //-----
+
+    }
+    function redirect() {
+        var windowAction = "nar_legend.html";
+        var emailAddress = document.getElementById("emailAddress").value;
+        logExp("Start Experiment - Group:" + expType + ' - Email:' + emailAddress, partId);
+        window.location.href = windowAction;
+    }
+    
+</script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body onload="assignPartId()">
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Process Modelling Enrichment Using Narration</h2>
+    </div>
+    </section><!--end of header section-->
+   
+    <section id="main">
+        <div style="margin:30px">
+            <h3>Selamat Datang</h3><br>
+
+            Terima kasih atas kesediaan Anda untuk berpartisipasi dalam eksperimen ini.<br><br>
+
+            Tujuan dari eksperimen ini adalah untuk mengimplementasikan penyajian proses model menggunakan narasi dan animasi, serta mengevaluasi efek dari implementasi tersebut pada pemahaman peserta eksperimen terhadap proses model.<br><br>
+
+            Pada eksperimen ini, Anda akan dihadapkan pada proses model yang prakteknya secara umum telah diterapkan pada organisasi ini (Pusintek). <br>
+            Namun perlu diperhatikan bahwa <b><u>tidak</u></b> semua alur dan proses yang akan ditampilkan pada eksperimen ini sesuai dengan proses yang terjadi di Pusintek.<br>
+            Anda diharapkan untuk dapat mengobservasi dan memahami proses model yang ditampilkan serta menjawab pertanyaan terkait proses tersebut.<br><br>
+
+            Secara umum, eksperimen ini akan memakan waktu kurang lebih selama 40 menit. <br>
+            Untuk memulai, silahkan mengisi alamat email Kemenkeu Anda pada textbox di bawah ini. <br>
+            Data pribadi Anda tidak akan dikaitkan dengan jawaban dan data lain yang direkam pada eksperimen ini.<br>
+            Hasil eksperimen ini akan dijaga kerahasiaannya dan hanya akan digunakan oleh penyelenggara eksperimen untuk keperluan akademis.<br><br>
+
+            Jika Anda mempunyai pertanyaan atau membutuhkan informasi tambahan, silahkan <a href="mailto:faridanurcahyani@student.vu.nl">hubungi kami.</a><br>
+             
+            <br>
+            <div>
+                <iframe name="iframe_cm" id="iframe_cm" style="display:none;" onload="if(typeof sent_cm!='undefined'){redirect();}"></iframe>
+                <form action="https://script.google.com/macros/s/AKfycbxijgp9hmHzR5ApKSJkKLnGTUCkdYeCtu33qlNwQe9QsJr5ou4u/exec" id="ss-form" method="POST" target="iframe_cm" onsubmit="sent_cm=true" >
+                E-mail  : <input type="email" name="email" id="emailAddress" autocomplete="off" required style="margin-bottom:15px"><br>
+                <input type="text" name="uid" id="uid" hidden="true"/>
+                <button type="submit" animFinish-button-click id="startExpNar" onclick="assignGroup('narration');"><span class="glyphicon glyphicon-ok"></span> Start</button>
+                <button type="submit" animFinish-button-click id="startExpStatic" onclick="assignGroup('static');"><span class="glyphicon glyphicon-ok"></span> Start</button>
+                </form>
+            </div>
+        </div>
+    </section><!--end of main section-->
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" type="image/x-icon">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width">
+  <base target="_blank">
+  
+<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://docs.google.com/static/forms/client/css/1272744746-formview_st_ltr.css' type='text/css' rel='stylesheet'>
+<link href='https://docs.google.com/static/forms/client/css/3145455273-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+<link href='css/formstyle.css' type='text/css' rel='stylesheet'>
+<link href="css/main.css" type='text/css' rel="stylesheet">
+
+<script src="log/logExp.js"></script>
+<script src="js/recap.js"></script>
+<script type="text/javascript">
+    var partId;
+    function assignPartId(){
+        partId = localStorage["partId"];
+        logExp("Start questions - Model: ChangeMgmt", partId);
+    }
+
+    function getProcessName() {
+        return 'cm';
+    }
+</script>
+
+<title>Process Modelling Enrichment Using Narration</title>
+</head>
+<body>
+    <section id="header">
+    <div>
+	  <a class="navbar-brand" href="#">
+        <img alt="PRIME Process Model Animation" src="images/logotext.png" height="60px" data-step="1" data-intro="Welcome to PRIME." data-position='right'>
+      </a>
+      
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/LogoVUA.png" height="60px" data-step="1" data-intro="Welcome to VU BusI." data-position='right'>
+      </a>
+      <a class="rightImg" href="#">
+        <img alt="VU Business Informatics Group" src="images/flag_yellow_low.jpg" height="50px" data-step="1" data-intro="This project is funded <br> by the European Union." data-position='right'>
+            <div class="headerNote">This project is funded <br> by the European Union</div>
+      </a>
+      <h2 class="topText">Manajemen Perubahan</h2>
+    </div>
+
+    <hr class="style-two" >    
+    <div class="headerText">
+        <label class="rightImg"  id="timer" style="font-size:large">00:00</label>
+        <p><font color="a80823">Perhatian:</font><br>
+        Pada bagian ini, Anda akan diminta untuk menjawab pertanyaan mengenai proses manajemen perubahan <i>(change management)</i><br>
+        <b><u>Tidak</u></b> semua aktivitas dan alur dalam proses model yang telah Anda lihat pada halaman sebelumnya sesuai dengan proses yang terjadi di Pusintek. <br>
+        <b>Mohon untuk <u>tidak</u> menjawab pertanyaan berikut berdasarkan pengalaman yang telah Anda miliki dalam organisasi ini, melainkan mengacu kepada proses model yang ditampilkan.</b><br>
+        Sebagai referensi, Anda dapat mengakses proses model terkait dengan meng-klik tombol yang terdapat di bawah ini.<br>
+        </p>
+    </div>
+    </section><!--end of header section-->
+    
+    <div id="formContainer" class="ss-form-container">
+        <div style="text-align:center;padding:10px">
+            <button id="btn-model" style="float: right" onclick="window.open('nar_statcm.html?s=q1','menubar=no'); return false;">Lihat proses model</button>
+            <h3><b>Manajemen Perubahan</b></h3>
+            <hr class="style-two">
+        </div>
+    
+        <div id="questionContainer" class="ss-form">
+            <iframe name="iframe_cm" id="iframe_cm" style="display:none;" onload="if(typeof sent_cm!='undefined'){redirect_quest();}"></iframe>
+            <form action="https://script.google.com/macros/s/AKfycbzsNzCdYg7e28o7ACiuSy74ZQ7CTPHmJ9G5AJB1qzl3YofICUoI/exec" method="POST" id="ss-form" target="iframe_cm" onsubmit="sent_cm=true">
+                <div class="ss-required-asterisk" aria-hidden="true"><i>* (harus diisi)</i></div>
+                <!--NO.1-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">1.	Pada kondisi apa Change Management membuat dokumen untuk mengkaji permintaan perubahan?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila sebuah permintaan dikategorikan sebagai standard change dan Release Management bertanggung jawab sebagai RFT untuk permintaan tersebut</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Setelah Service Desk merekam permintaan perubahan pada SIpelanTIK</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="C" role="radio" required="true">
+                    <span class="ss-choice-label">Setelah normal change selesai direview oleh Change Advisory Board</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="D" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saat Emergency CAB memutuskan bahwa perubahan yang diajukan bukan merupakan emergency dan merubah prioritas menjadi normal change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q1" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.1-->
+
+                <!--NO.2-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">2. Apa saja yang harus didokumentasikan setelah perubahan diimplementasikan?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Detail deskripsi implementasi rollback plan dan alasannya apabila tidak berhasil</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Daftar anggota CAB yang memberikan otorisasi perubahan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Daftar normal change yang telah disetujui oleh CAB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label" >Kajian resiko dan implikasi apabila tidak dilakukan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q2" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.2-->
+
+                <!--NO.3-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">3. Manakah dari pernyataan berikut yang benar mengenai Post Implementation Review (PIR)?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika implementasi perubahan berhasil, PIR dilaksanakan sebelum Configuration management mengupdate CMDB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika implementasi perubahan gagal, PIR dilaksanakan sebelum CAN mengidentifikasi problem yang terjadi selama implementasi</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika implementasi perubahan berhasil, PIR dilaksanakan setelah Change Manager menutup permintaan perubahan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Jika implementasi perubahan gagal, PIR dilaksanakan sebelum mengimplementasikan rollback plan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q3" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.3-->
+
+                <!--NO.4-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">4. Saat RFC dikategorikan sebagai normal change, manakah dari pernyataan berikut yang benar??
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Normal change dapat dipenuhi oleh Service Desk</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila normal change tidak diotorisasi oleh CAB, maka normal change akan diubah menjadi standar change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila implementasi normal change berhasil, Configuration Management akan mengupdate CMDB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Release Management perlu mengkaji normal change sebelum direview oleh CAB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q4" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.4-->
+
+                <!--NO.5-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">5. Manakah dari pernyataan di bawah ini yang benar mengeai tanggung jawab dari Change Manager?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Menentukan tipe dari permintaan change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Mengidentifikasi problem apabila implementasi change tidak berhasil</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Mengotorisasi sebuah emergency change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Mereview dokumen kajian perubahan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q5" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.5-->
+
+                <!--NO.6-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">6. Pada kondisi apa Release Management tidak bertanggung jawab untuk mengimplementasikan change? 
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila Emergency CAB memutuskan untuk menyetujui dan mengotorisasi emergency change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila Release Management bertanggung jawab sebagai RFT dari sebuah standard change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila normal change ditolak setelah Change Manager mereview dokumen kajian perubahan</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Setelah normal change disetujui pada rapat CAB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q6" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.6-->
+
+                <!--NO.7-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">7. Kondisi apa yang mungkin terjadi setelah rapat Emergency CAB?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Emergency CAB menyetujui sebuah emergency change dan mengotorisasi Service Desk untuk mengimplementasikan change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Emergency CAB menolak emergency change dan mengarahkan proses melalui mekanisme normal change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Emergency CAB menolak emergency change dan menutup permintaan dengan status ditolak</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Release Manager menyusun jadwal dan menunjuk PIC yang bertanggung jawab untuk implementasi change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q7" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.7-->
+
+                <!--NO.8-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">8. Apabila sebuah permintaan dikategorikan sebagai normal change, manakah dari berikut ini yang merupakan peran CAB?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Menentukan apakah change diotorisasi atau ditolak berdasarkan informasi dan dokumen pendukung terkait</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Menyusun strategi deployment, resource yang dibutuhkan, kebutuhan untuk proses pengujian, dan rencana rollback</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Mereview dokumen kajian perubahan dari Change Management</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Menyesuaikan kategori dan prioritas change untuk permintaan change yang ditolak</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q8" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.8-->
+
+                <!--NO.9-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">9. Pada kondisi apa sebuah permintaan change dikategorikan sebagai standard change?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika change hanya dapat dipenuhi oleh Service Desk</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika change harus segera dipenuhi dan diimplementasikan untuk menyelesaikan gangguan prioritas tinggi</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Jika telah terdapat prosedur mengenai langkah pengimplementasian change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Jika telah mendapat persetujuan sebelumnya (pre-approval) oleh CAB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q9" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.9-->
+
+                <!--NO.10-->
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-radio">
+                    <div class="ss-form-entry">
+                    <label class="ss-q-item-label">
+                    <div class="ss-q-title">10. Manakah dari pernyataan berikut yang benar mengenai rencana rollback?
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+                    <ul class="ss-choices" role="radiogroup">
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="A" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Rencana rollback disusun pada rapat CAB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="B" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Apabila implementasi rollback tidak berhasil, CAB akan menentukan jadwal untuk implementasi berikutnya</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="C" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Rencana rollback hanya dibutuhkan untuk emergency change</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="D" role="radio" class="ss-q-radio"  required="true">
+                    <span class="ss-choice-label">Jika rollback telah diimplementasikan, Configuration Management tidak melakukan update pada CMDB</span>
+                    </label></li> 
+                    <li class="ss-choice-item"><label>
+                    <input type="radio" name="q10" value="E" role="radio" class="ss-q-radio" required="true">
+                    <span class="ss-choice-label">Saya tidak tahu</span>
+                    </label></li>
+                    </ul>
+                    </div></div>
+                </div>
+                <!-- end of no.10-->
+
+                <!--UID-->
+                <input type="text" name="uid" id="uid" hidden="true" />
+                <!--UID-->
+
+                <div class="centerImg" style="margin-bottom:15px">
+                    <button type="submit" id="btn-submit" class="button" onclick="assignUniqueId();"><span class="glyphicon glyphicon-ok"></span>  Selesai</button>
+                </div>
+            </form>
+        </div> <!--closing div id="questionContainer"-->
+    </div> <!--closing div id="formContainer"-->
+   
+    <!-- footer section -->
+    <section id="footer">
+        <hr class="style-two">
+        <div><img src="images/flag_yellow_low.jpg" height="50px" class="leftImg">
+            <div class="leftImg">This project has received funding from the European Union’s <br>Horizon 2020 research and innovation programme under <br>the Marie Sklodowska-Curie grant agreement No 660646.</div>
+        </div>
+    </section>
+   <!-- end of footer section -->
+
+    
+    <!--<script type='text/javascript' src='/static/forms/client/js/656350063-formviewer_prd__en_gb.js'></script>
+    <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,null,[]\n]\n");
+    </script>-->
+
+    <!-- application -->
+    <script src="js/nar_anim_bundle.js"></script>
+
+    </body>
+</html>
